@@ -1,0 +1,234 @@
+/* Main Styles */
+
+h2 {
+    font-size: 35px;
+}
+
+h3 {
+    margin: 0 0 15px 0;
+}
+
+.wiki-header {
+    font-family: 'Bangers', cursive;
+    padding: 65px 20px;
+    margin: 65px auto 0 auto;
+    background-color: #ffe066;
+    color: #2b3e50;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.wiki-entry {
+    position: relative;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    padding: 58px;
+    margin: 45px 0 0 70px;
+    background-color: #ffe066;
+    color: #2b3e50;
+    width: 325px;
+    height: 325px;
+    border-radius: 50%;
+}
+
+.wiki-entry h3 {
+    font-family: 'Bangers', cursive;
+    font-size: 25px;
+}
+
+.wiki-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+}
+
+.mag-glass {
+    width: 65px;
+    height: 65px;
+}
+
+.dice-roll {
+    margin: 0 0 10px 0;
+    width: 40px;
+    height: 40px;
+}
+
+.mag-glass,
+.dice-roll {
+    fill: #2b3e50;
+}
+
+.search-container {
+    margin-top: 40px;
+    text-align: center;
+}
+
+input {
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+    padding-left: 25px;
+    width: 335px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #2b3e50;
+    border: none;
+    transition: background-color .5s ease-in;
+    vertical-align: -50%;
+}
+
+.search-reset {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    margin: 0 0 0 25px;
+    background-color: #2b3e50;
+    transition: background-color .5s ease-in;
+    color: #2b3e50;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: none;
+}
+
+.reveal {
+    background-color: #ffe066;
+    border: none;
+    transition: background-color .5s ease-out;
+}
+
+#continue-button {
+    position: relative;
+    height: 150px;
+}
+
+#contButton {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    position: absolute;
+    top: -200px;
+    right: 300px;
+    background-color: #ffe066;
+    color: #2b3e50;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: none;
+}
+
+::-webkit-input-placeholder {
+    color: #2b3e50;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: #2b3e50;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #2b3e50;
+}
+
+:-ms-input-placeholder {
+    color: #2b3e50;
+}
+
+
+/* Chrome blue border fix */
+
+button,
+button:active,
+input:focus {
+    border: none;
+    outline: none;
+}
+
+
+/* Centering child elements */
+
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+.col-centered-inline {
+    display: inline-block;
+    float: none;
+    /* reset the text-align */
+    text-align: left;
+    /* inline-block space fix */
+    margin-right: -4px;
+}
+
+
+/* centered columns styles */
+
+.row-centered {
+    text-align: center;
+}
+
+
+/* Media Queries */
+
+
+/* Desktop */
+
+@media only screen and (min-width: 1600px) {
+    /* Styles here */
+}
+
+
+/* Laptop */
+
+@media only screen and (min-width: 1200px) {
+    /* Styles here */
+}
+
+
+/* Tablet - iPad */
+
+@media only screen and (max-width: 768px) {
+    .search-reset {
+        margin: 20px 0 0 0;
+    }
+    .wiki-entry {
+        float: none;
+        margin: 25px auto;
+    }
+    #contButton {
+        position: absolute;
+        top: -145px;
+        right: 140px;
+    }
+}
+
+@media only screen and (max-width: 523px) {
+    .search-reset {
+        margin: 20px 0 0 25px;
+    }
+}
+
+@media only screen and (max-width: 498px) {
+    .search-reset {
+        margin: 20px 0 0 5px;
+    }
+}
+
+
+/* Smartphone - iPhone */
+
+@media only screen and (max-width: 320px) {
+    .wiki-entry {
+        margin: 45px auto;
+    }
+    .search-reset {
+        margin: 20px 0 0 0;
+    }
+    #contButton {
+        position: initial;
+    }
+}
