@@ -1,5 +1,9 @@
 /* Main Styles */
 
+body {
+    background-color: #2b3e50;
+}
+
 h2 {
     font-size: 35px;
 }
@@ -68,7 +72,7 @@ h3 {
     text-align: center;
 }
 
-input {
+input[type="text"] {
     font-family: 'Oswald', sans-serif;
     font-size: 22px;
     padding-left: 25px;
@@ -77,6 +81,7 @@ input {
     border-radius: 25px;
     background-color: #2b3e50;
     border: none;
+    outline: none;
     transition: background-color .5s ease-in;
     vertical-align: -50%;
 }
@@ -95,7 +100,7 @@ input {
 }
 
 .reveal {
-    background-color: #ffe066;
+    background-color: #ffe066 !important;
     border: none;
     transition: background-color .5s ease-out;
 }
@@ -142,7 +147,8 @@ input {
 
 button,
 button:active,
-input:focus {
+input:focus,
+input[type="text"]:focus {
     border: none;
     outline: none;
 }
