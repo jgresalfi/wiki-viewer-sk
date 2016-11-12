@@ -5,22 +5,30 @@ body {
 }
 
 h2 {
-    font-size: 35px;
+    font-size: 30px;
+    padding: 54px;
+    text-align: center;
+    margin-bottom: -3rem;
 }
 
 h3 {
     margin: 0 0 15px 0;
 }
 
+.header-container {
+    margin: 0 auto;
+}
+
 .wiki-header {
     font-family: 'Bangers', cursive;
-    padding: 65px 20px;
+    /*padding: 65px 20px;*/
     margin: 65px auto 0 auto;
     background-color: #ffe066;
     color: #2b3e50;
     width: 300px;
     height: 300px;
     border-radius: 50%;
+    text-align: center;
 }
 
 .wiki-entry {
@@ -151,30 +159,6 @@ input:focus,
 input[type="text"]:focus {
     border: none;
     outline: none;
-}
-
-
-/* Centering child elements */
-
-.col-centered {
-    float: none;
-    margin: 0 auto;
-}
-
-.col-centered-inline {
-    display: inline-block;
-    float: none;
-    /* reset the text-align */
-    text-align: left;
-    /* inline-block space fix */
-    margin-right: -4px;
-}
-
-
-/* centered columns styles */
-
-.row-centered {
-    text-align: center;
 }
 
 
