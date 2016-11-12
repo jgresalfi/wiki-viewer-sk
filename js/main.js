@@ -10,7 +10,11 @@ document.addEventListener("DOMContentLoaded", function() {
         function searchReveal() {
             searchBox.classList.toggle("reveal");
             searchReset.classList.toggle("reveal");
-            searchBox.focus();
+            if (searchBox.classList.contains("reveal")) {
+                searchBox.focus();
+            } else if (!searchBox.classList.contains("reveal")) {
+                searchBox.blur();
+            }
         }
 
         function searchClear() {
