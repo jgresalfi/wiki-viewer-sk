@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
             searchReset.classList.toggle("reveal");
             if (searchBox.classList.contains("reveal")) {
                 searchBox.focus();
-            } else if (!searchBox.classList.contains("reveal")) {
+            } else {
                 searchBox.blur();
             }
         }
@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     artLink.setAttribute("href", artURL);
                     artLink.setAttribute("target", "_blank");
                     artLink.classList.add("wiki-link");
-                    artDiv.classList.add("wiki-entry", "col-sm-2", "text-center");
+                    artDiv.classList.add("wiki-entry", "four", "column", "text-center");
                     artTitle.innerHTML = data.query.search[i].title;
                     artSnip.innerHTML = data.query.search[i].snippet;
                     artDiv.append(artTitle, artSnip, artLink);
