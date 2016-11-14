@@ -159,12 +159,18 @@ input[type="text"] {
 button,
 button:active,
 button:focus,
+button:hover,
 input:active,
 input:focus,
 input[type="text"]:focus {
     border: none;
     outline: none;
     color: #2b3e50;
+}
+
+button:hover {
+    transition: transform .5s ease;
+    transform: scale(1.15, 1.15);
 }
 
 
