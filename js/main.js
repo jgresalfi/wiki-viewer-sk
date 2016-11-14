@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
                 if (data.query.searchinfo.totalhits > 12) {
                     contBtn.setAttribute("id", "contButton");
-                    contBtn.innerHTML = "More results...";
+                    contBtn.innerHTML = "More...";
                     contDiv.append(contBtn);
                 }
 
