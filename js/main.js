@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     artLink.setAttribute("href", artURL);
                     artLink.setAttribute("target", "_blank");
                     artLink.classList.add("wiki-link");
-                    artDiv.classList.add("wiki-entry", "four", "column", "text-center");
+                    artDiv.classList.add("wiki-entry", "one-third", "column");
                     artTitle.innerHTML = data.query.search[i].title;
                     artSnip.innerHTML = data.query.search[i].snippet;
                     artDiv.append(artTitle, artSnip, artLink);

@@ -5,14 +5,14 @@ body {
 }
 
 h2 {
-    font-size: 30px;
-    padding: 54px;
+    font-size: 34px;
+    padding: 70px 60px 5px 60px;
     text-align: center;
-    margin-bottom: -3rem;
 }
 
 h3 {
-    margin: 0 0 15px 0;
+    margin: -10px 0 15px 0;
+    letter-spacing: 0;
 }
 
 .header-container {
@@ -36,17 +36,18 @@ h3 {
     font-family: 'Oswald', sans-serif;
     font-size: 16px;
     padding: 58px;
-    margin: 45px 0 0 70px;
+    margin: 45px 10px 0 10px;
     background-color: #ffe066;
     color: #2b3e50;
-    width: 325px;
-    height: 325px;
+    width: 300px!important;
+    height: 300px !important;
     border-radius: 50%;
+    text-align: center;
 }
 
 .wiki-entry h3 {
     font-family: 'Bangers', cursive;
-    font-size: 25px;
+    font-size: 21px;
 }
 
 .wiki-link {
@@ -54,8 +55,8 @@ h3 {
     top: 0;
     left: 0;
     display: block;
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
 }
 
