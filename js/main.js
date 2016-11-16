@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
         function getResponse(url, callback) {
             var xhr = new XMLHttpRequest();
             xhr.withCredentials = false;
-            xhr.open('GET', url);
+            xhr.open('GET', url, true);
             xhr.onload = function() {
                 if (this.status >= 200 && this.status < 400) {
                     console.log(this.status);
@@ -38,8 +38,6 @@ document.addEventListener("DOMContentLoaded", function() {
                     console.log(this.error);
                 }
             }; //End xhr.onload
-            xhr.setRequestHeader("cache-control", "no-cache");
-            xhr.setRequestHeader("postman-token", "5cef329f-7549-4ee8-c727-26fbff8c8d6e");
             xhr.send();
         } //End getResponse
 

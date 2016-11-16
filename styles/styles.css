@@ -117,6 +117,9 @@
         background-color: #ffe066 !important;
         border: none;
         transition: background-color .5s ease-out;
+        -webkit-box-shadow: 7px 7px 10px -1px rgba(0, 0, 0, 0.68) !important;
+        -moz-box-shadow: 7px 7px 10px -1px rgba(0, 0, 0, 0.68) !important;
+        box-shadow: 7px 7px 10px -1px rgba(0, 0, 0, 0.68) !important;
     }
     
     #continue-button {
@@ -171,6 +174,15 @@
     button:hover {
         transition: transform .5s ease;
         transform: scale(1.15, 1.15);
+    }
+    
+    .wiki-header,
+    .wiki-entry,
+    .search-field,
+    #contButton {
+        -webkit-box-shadow: 7px 7px 10px -1px rgba(0, 0, 0, 0.68);
+        -moz-box-shadow: 7px 7px 10px -1px rgba(0, 0, 0, 0.68);
+        box-shadow: 7px 7px 10px -1px rgba(0, 0, 0, 0.68);
     }
     /* Media queries */
     
