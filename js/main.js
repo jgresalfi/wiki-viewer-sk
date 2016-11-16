@@ -32,8 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
             xhr.open('GET', url);
             xhr.onload = function() {
                 if (this.status >= 200 && this.status < 400) {
-                    console
-.log(this.status);
+                    console.log(this.status);
                     callback(this.response);
                 } else {
                     console.log(this.error);
@@ -87,8 +86,8 @@ document.addEventListener("DOMContentLoaded", function() {
         //Fires getResponse() and responseWrite() to get data and write it to page
         searchBox.onchange = function() {
             var ajaxURL = "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=" + searchBox.value + "&srlimit=12&format=json&continue=";
-            getResponse(ajaxURL, responseWrite);
             resultDiv.innerHTML = "";
+            getResponse(ajaxURL, responseWrite);
         };
 
         //Search results continue button
