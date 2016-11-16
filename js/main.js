@@ -32,7 +32,8 @@ document.addEventListener("DOMContentLoaded", function() {
             xhr.open('GET', url);
             xhr.onload = function() {
                 if (this.status >= 200 && this.status < 400) {
-                    console.log(this.status);
+                    console
+.log(this.status);
                     callback(this.response);
                 } else {
                     console.log(this.error);
@@ -105,14 +106,6 @@ document.addEventListener("DOMContentLoaded", function() {
             resultDiv.innerHTML = "";
             contBtn.remove();
             searchBox.placeholder = "Search...";
-        }
-
-        //Add responsive class to search continue btn when screen width is less than 1200px
-        window.onresize = function() {
-            var contButton = document.getElementById("continue-button");
-            if (window.innerWidth < 1200) {
-                contButton.classList.add("offset-by-three");
-            }
         }
 
     }) //End docready
