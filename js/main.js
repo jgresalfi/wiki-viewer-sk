@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     artLink.setAttribute("href", artURL);
                     artLink.setAttribute("target", "_blank");
                     artLink.classList.add("wiki-link");
-                    artDiv.classList.add("wiki-entry", "one-third", "column");
+                    artDiv.classList.add("wiki-entry", "two", "column");
                     artTitle.innerHTML = data.query.search[i].title;
                     artSnip.innerHTML = data.query.search[i].snippet;
                     artDiv.append(artTitle, artSnip, artLink);
@@ -105,6 +105,14 @@ document.addEventListener("DOMContentLoaded", function() {
             resultDiv.innerHTML = "";
             contBtn.remove();
             searchBox.placeholder = "Search...";
+        }
+
+        //Add responsive class to search continue btn when screen width is less than 1200px
+        window.onresize = function() {
+            var contButton = document.getElementById("continue-button");
+            if (window.innerWidth < 1200) {
+                contButton.classList.add("offset-by-three");
+            }
         }
 
     }) //End docready

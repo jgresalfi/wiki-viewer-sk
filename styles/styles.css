@@ -4,6 +4,10 @@ body {
     background-color: #2b3e50;
 }
 
+.container {
+    width: 100%;
+}
+
 h2 {
     font-size: 34px;
     padding: 70px 60px 5px 60px;
@@ -35,13 +39,15 @@ h3 {
     font-family: 'Oswald', sans-serif;
     font-size: 16px;
     padding: 58px;
-    margin: 45px 10px 0 10px;
     background-color: #ffe066;
     color: #2b3e50;
     width: 300px!important;
     height: 300px !important;
     border-radius: 50%;
     text-align: center;
+    margin: 45px 10px 0 10px;
+    float: left;
+    display: inline-block;
 }
 
 .wiki-entry h3 {
@@ -98,7 +104,6 @@ input[type="text"] {
     display: inline-block;
     font-family: 'Bangers', cursive;
     font-size: 20px;
-    margin: 0 0 0 25px;
     padding: 0;
     background-color: #2b3e50;
     transition: background-color .5s ease-in;
@@ -107,6 +112,7 @@ input[type="text"] {
     height: 100px;
     border-radius: 50%;
     border: none;
+    margin-left: 20px;
 }
 
 .reveal {
@@ -124,8 +130,8 @@ input[type="text"] {
     font-family: 'Bangers', cursive;
     font-size: 20px;
     position: absolute;
-    top: -30vh;
-    right: -10vw;
+    top: -67vh;
+    right: -30vw;
     background-color: #ffe066;
     color: #2b3e50;
     width: 100px;
@@ -174,63 +180,32 @@ button:hover {
 }
 
 
-/* Media Queries */
+/* Mobile first queries */
 
 
-/* Desktop */
+/* Larger than desktop */
 
-@media only screen and (min-width: 1600px) {
-    /* Styles here */
-}
-
-
-/* Laptop */
-
-@media only screen and (min-width: 1200px) {
-    /* Styles here */
-}
-
-
-/* Tablet - iPad */
-
-@media only screen and (max-width: 768px) {
-    .search-reset {
-        margin: 20px 0 0 0;
-    }
-    .wiki-entry {
-        float: none;
-        margin: 25px auto;
-    }
-    #contButton {
-        position: absolute;
-        top: -145px;
-        right: 140px;
-    }
-}
-
-@media only screen and (max-width: 523px) {
-    .search-reset {
-        margin: 20px 0 0 25px;
-    }
-}
-
-@media only screen and (max-width: 498px) {
-    .search-reset {
-        margin: 20px 0 0 5px;
-    }
-}
-
-
-/* Smartphone - iPhone */
-
-@media only screen and (max-width: 320px) {
-    .wiki-entry {
-        margin: 45px auto;
-    }
-    .search-reset {
-        margin: 20px 0 0 0;
-    }
+@media (max-width: 1200px) {
     #contButton {
         position: initial;
+        margin-top: 45px;
+    }
+    #continue-button {
+        text-align: center;
     }
 }
+
+
+/* Larger than tablet */
+
+@media (max-width: 750px) {}
+
+
+/* Larger than phablet */
+
+@media (max-width: 550px) {}
+
+
+/* Larger than mobile */
+
+@media (max-width: 400px) {}
