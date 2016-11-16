@@ -55,6 +55,7 @@ document.addEventListener("DOMContentLoaded", function() {
             var contDiv = document.getElementById("continue-button");
             data = JSON.parse(response);
             if (data.query.search.length === 0) {
+                searchBox.value = searchBox.defaultValue;
                 searchBox.placeholder = "Please try your search again...";
             } else {
                 for (var i = 0; i < data.query.search.length; i++) {
