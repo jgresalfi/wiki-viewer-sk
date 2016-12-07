@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 } else {
                     console.log(this.error);
                 }
-            }; //End xhr.onload
+            } //End xhr.onload
             xhr.send();
         } //End getResponse
 
