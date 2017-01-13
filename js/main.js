@@ -1,7 +1,6 @@
 'use strict';
 
 document.addEventListener("DOMContentLoaded", function() {
-
   //Event listener to reveal search field on magnifying glass click
   var clicker = document.getElementById("clicker"),
     searchBox = document.getElementById("search"),
